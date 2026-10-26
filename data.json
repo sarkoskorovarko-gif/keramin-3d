@@ -136,17 +136,101 @@
  "sets": [
   {
    "id": "C",
-   "name": "Белая плитка, тёмная затирка",
+   "name": "Белая, тёмная затирка",
    "walls": {
     "back": "wall_white_dark",
     "front": "wall_white_dark",
     "left": "wall_white_dark",
     "right": "wall_white_dark"
    }
+  },
+  {
+   "id": "D",
+   "name": "Канон, бежевый мрамор",
+   "walls": {
+    "back": "wall_kanon_r_3",
+    "front": "wall_kanon_r_3",
+    "left": "wall_kanon_r_3",
+    "right": "wall_kanon_r_3"
+   }
+  },
+  {
+   "id": "E",
+   "name": "Крафт, серый мрамор",
+   "walls": {
+    "back": "wall_kraft",
+    "front": "wall_kraft",
+    "left": "wall_kraft",
+    "right": "wall_kraft"
+   }
+  },
+  {
+   "id": "F",
+   "name": "Салерно, терраццо",
+   "walls": {
+    "back": "wall_salerno_7",
+    "front": "wall_salerno_7",
+    "left": "wall_salerno_7",
+    "right": "wall_salerno_7"
+   }
   }
  ],
  "shots": {
   "C": {
+   "s": [
+    "dezert_p_1_600x600",
+    "kanon_r_3_600x600",
+    "klemo_r_1_600x600",
+    "kraft_r_600x600",
+    "mistik_r1_1200x600",
+    "rey_r5_600x600"
+   ],
+   "d": [
+    "dezert_p_1_600x600",
+    "kanon_r_3_600x600",
+    "klemo_r_1_600x600",
+    "kraft_r_600x600",
+    "mistik_r1_1200x600",
+    "rey_r5_600x600"
+   ]
+  },
+  "D": {
+   "s": [
+    "dezert_p_1_600x600",
+    "kanon_r_3_600x600",
+    "klemo_r_1_600x600",
+    "kraft_r_600x600",
+    "mistik_r1_1200x600",
+    "rey_r5_600x600"
+   ],
+   "d": [
+    "dezert_p_1_600x600",
+    "kanon_r_3_600x600",
+    "klemo_r_1_600x600",
+    "kraft_r_600x600",
+    "mistik_r1_1200x600",
+    "rey_r5_600x600"
+   ]
+  },
+  "E": {
+   "s": [
+    "dezert_p_1_600x600",
+    "kanon_r_3_600x600",
+    "klemo_r_1_600x600",
+    "kraft_r_600x600",
+    "mistik_r1_1200x600",
+    "rey_r5_600x600"
+   ],
+   "d": [
+    "dezert_p_1_600x600",
+    "kanon_r_3_600x600",
+    "klemo_r_1_600x600",
+    "kraft_r_600x600",
+    "mistik_r1_1200x600",
+    "rey_r5_600x600"
+   ]
+  },
+  "F": {
    "s": [
     "dezert_p_1_600x600",
     "kanon_r_3_600x600",
