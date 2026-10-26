@@ -1,0 +1,170 @@
+{
+ "floors": [
+  {
+   "id": "kraft_r_600x600",
+   "name": "Крафт Р, серый мрамор",
+   "len": 600,
+   "wid": 600,
+   "price_m2": 1749.0,
+   "pack_m2": 1.44,
+   "pack_pcs": 4,
+   "url": "https://keramin.ru/catalog/02_keramogranit_glazurovannyy/kraft_r/kraft_r_bla_600_600_keramicheskiy_granit_glaz_gr_/"
+  },
+  {
+   "id": "mistik_r1_1200x600",
+   "name": "Мистик Р1, светлый мрамор",
+   "len": 1200,
+   "wid": 600,
+   "price_m2": 1949.0,
+   "pack_m2": 1.44,
+   "pack_pcs": 2,
+   "url": "https://keramin.ru/catalog/02_keramogranit_glazurovannyy/mistik_r/mistik_r1_bla_1200_600_keramicheskiy_granit_glaz_gr/"
+  },
+  {
+   "id": "kanon_r_3_600x600",
+   "name": "Канон Р 3, бежевый мрамор",
+   "len": 600,
+   "wid": 600,
+   "price_m2": 1729.0,
+   "pack_m2": 1.44,
+   "pack_pcs": 4,
+   "url": "https://keramin.ru/catalog/02_keramogranit_glazurovannyy/kanon/kanon_r_3_bla_600_600/"
+  },
+  {
+   "id": "klemo_r_1_600x600",
+   "name": "Клемо Р 1, серое терраццо",
+   "len": 600,
+   "wid": 600,
+   "price_m2": 1629.0,
+   "pack_m2": 1.44,
+   "pack_pcs": 4,
+   "url": "https://keramin.ru/catalog/02_keramogranit_glazurovannyy/klemo/klemo_r_1_bla_600_600/"
+  },
+  {
+   "id": "dezert_p_1_600x600",
+   "name": "Дезерт П 1, светлый бетон",
+   "len": 600,
+   "wid": 600,
+   "price_m2": 1729.0,
+   "pack_m2": 1.44,
+   "pack_pcs": 4,
+   "url": "https://keramin.ru/catalog/02_keramogranit_glazurovannyy/dezert/dezert_p_1_bla_600_600/"
+  },
+  {
+   "id": "rey_r5_600x600",
+   "name": "Рей Р5, чёрный камень",
+   "len": 600,
+   "wid": 600,
+   "price_m2": 1699.0,
+   "pack_m2": 1.44,
+   "pack_pcs": 4,
+   "url": "https://keramin.ru/catalog/02_keramogranit_glazurovannyy/rey/rey_r5_bla_600_600_keramicheskiy_granit_glaz_gr/"
+  }
+ ],
+ "walls": [
+  {
+   "id": "wall_pleyn_r7",
+   "name": "Плейн Р7, белая (стены)",
+   "len": 300,
+   "wid": 600,
+   "price_m2": 1999.0,
+   "pack_m2": 1.44,
+   "pack_pcs": 4,
+   "url": "https://keramin.ru/catalog/02_keramogranit_glazurovannyy/pleyn_r/pleyn_r7_bla_600_600_keramicheskiy_granit_glaz_gr/"
+  },
+  {
+   "id": "wall_flokk_r_7",
+   "name": "Флокк Р7, белая",
+   "len": 300,
+   "wid": 900,
+   "price_m2": 1799.0,
+   "pack_m2": 1.35,
+   "pack_pcs": 5,
+   "url": "https://keramin.ru/catalog/01_plitka_oblitsovochnaya/flokk_1/flokk_r_7_biii_900_300_s1_48_6/"
+  },
+  {
+   "id": "wall_kanon_r_3",
+   "name": "Канон Р3, бежевый мрамор",
+   "len": 900,
+   "wid": 300,
+   "price_m2": 1699.0,
+   "pack_m2": 1.35,
+   "pack_pcs": 5,
+   "url": "https://keramin.ru/catalog/01_plitka_oblitsovochnaya/kanon_1/kanon_r_3_biii_900_300_s1_48_6/"
+  },
+  {
+   "id": "wall_salerno_7",
+   "name": "Салерно 7, светлое терраццо",
+   "len": 300,
+   "wid": 600,
+   "price_m2": 1219.0,
+   "pack_m2": 1.98,
+   "pack_pcs": 11,
+   "url": "https://keramin.ru/catalog/01_plitka_oblitsovochnaya/salerno/salerno_7_blll_600_300_c1/"
+  },
+  {
+   "id": "wall_studio_4",
+   "name": "Студио 4, под дерево",
+   "len": 600,
+   "wid": 300,
+   "price_m2": 1199.0,
+   "pack_m2": 1.98,
+   "pack_pcs": 11,
+   "url": "https://keramin.ru/catalog/01_plitka_oblitsovochnaya/studio/studio_4_biii_600_300_8_5_s1/"
+  }
+ ],
+ "sets": [
+  {
+   "id": "A",
+   "name": "Белые стены + стена под дерево",
+   "walls": {
+    "back": "wall_studio_4",
+    "front": "wall_flokk_r_7",
+    "left": "wall_flokk_r_7",
+    "right": "wall_flokk_r_7"
+   }
+  },
+  {
+   "id": "B",
+   "name": "Бежевый мрамор",
+   "walls": {
+    "back": "wall_kanon_r_3",
+    "front": "wall_kanon_r_3",
+    "left": "wall_kanon_r_3",
+    "right": "wall_kanon_r_3"
+   }
+  },
+  {
+   "id": "C",
+   "name": "Терраццо + белая стена",
+   "walls": {
+    "back": "wall_flokk_r_7",
+    "front": "wall_salerno_7",
+    "left": "wall_salerno_7",
+    "right": "wall_salerno_7"
+   }
+  }
+ ],
+ "shots": {
+  "A": {
+   "s": [
+    "mistik_r1_1200x600"
+   ]
+  },
+  "B": {
+   "s": [
+    "kanon_r_3_600x600"
+   ]
+  },
+  "C": {
+   "s": [
+    "rey_r5_600x600"
+   ]
+  }
+ },
+ "room": {
+  "w": 2.6,
+  "d": 2.5,
+  "h": 2.6
+ }
+}

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Керамин 3D — плитка в вашей ванной</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><h1>Керамин 3D</h1><p>Выберите плитку — увидите ванную и сразу получите расчёт</p></header>
+<main>
+  <section class="view">
+    <img id="shot" alt="Ванная с выбранной плиткой">
+    <p id="caption"></p>
+  </section>
+  <section class="pick">
+    <h2>Стены</h2><div id="sets" class="chips"></div>
+    <h2>Пол</h2><div id="floors" class="tiles"></div>
+    <h2>Раскладка пола</h2>
+    <div class="chips" id="pattern">
+      <button data-p="s" class="on">Прямо</button><button data-p="d">Ромбом</button>
+    </div>
+  </section>
+  <section class="calc">
+    <h2>Ваша ванная, м</h2>
+    <div class="size">
+      <label>Ширина <input id="w" type="number" step="0.05" min="1.2" max="6"></label>
+      <label>Глубина <input id="d" type="number" step="0.05" min="1.2" max="6"></label>
+      <label>Высота <input id="h" type="number" step="0.05" min="2.2" max="3.5"></label>
+      <label class="ck"><input id="door" type="checkbox" checked> Дверь 80×210</label>
+      <label class="ck"><input id="win" type="checkbox" checked> Окно 60×80</label>
+    </div>
+    <table id="rows"></table>
+    <h2>Купить</h2>
+    <table id="buy"></table>
+    <p class="total">Итого плитка: <b id="total"></b></p>
+    <p class="note">Подрезка как у плиточников: целые плитки на виду, резка у двери и в углах, не уже трети плитки.
+      Запас 5 % (ромб — 10 %), покупка целыми коробками. Цены keramin.ru. Затирка, клей и работа не входят.
+      Картинка — пример ванной 2,6×2,5 м; расчёт — по вашим размерам.</p>
+  </section>
+</main>
+<script type="module" src="app.js"></script>
+</body>
+</html>

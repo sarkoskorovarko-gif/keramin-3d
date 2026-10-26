@@ -1,0 +1,29 @@
+:root { --bg: #f6f4f1; --fg: #222; --mut: #6b6560; --acc: #b0413e; --line: #e2ddd6; --card: #fff; }
+* { box-sizing: border-box; }
+body { margin: 0; font: 15px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif; background: var(--bg); color: var(--fg); }
+header { padding: 18px 16px 6px; max-width: 1200px; margin: auto; }
+h1 { margin: 0; font-size: 26px; } header p { margin: 4px 0 0; color: var(--mut); }
+h2 { font-size: 15px; margin: 16px 0 8px; }
+main { max-width: 1200px; margin: auto; padding: 0 16px 40px; display: grid; gap: 18px; grid-template-columns: 1fr; }
+@media (min-width: 900px) { main { grid-template-columns: 1.6fr 1fr; } .calc { grid-column: 1 / -1; } }
+.view img { width: 100%; border-radius: 10px; display: block; background: #ddd; aspect-ratio: 3 / 2; object-fit: cover; }
+.view p { color: var(--mut); margin: 6px 2px; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+button { font: inherit; cursor: pointer; border: 1px solid var(--line); background: var(--card); border-radius: 8px; padding: 7px 12px; color: var(--fg); }
+button.on { border-color: var(--acc); box-shadow: 0 0 0 2px var(--acc) inset; }
+button:disabled { opacity: .35; cursor: default; }
+.tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; }
+.tiles button { display: flex; flex-direction: column; align-items: flex-start; padding: 6px; text-align: left; }
+.tiles img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 5px; }
+.tiles span { margin-top: 4px; font-size: 13px; } .tiles small { color: var(--mut); font-size: 12px; }
+.size { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: end; }
+.size label { display: flex; flex-direction: column; font-size: 13px; color: var(--mut); }
+.size input[type=number] { width: 90px; font: inherit; padding: 6px 8px; border: 1px solid var(--line); border-radius: 6px; }
+.size .ck { flex-direction: row; gap: 6px; align-items: center; color: var(--fg); }
+table { width: 100%; border-collapse: collapse; background: var(--card); border-radius: 8px; overflow: hidden; font-size: 14px; }
+th, td { padding: 7px 8px; border-bottom: 1px solid var(--line); text-align: left; }
+th { color: var(--mut); font-weight: 500; font-size: 13px; }
+td small { color: var(--mut); } a { color: var(--acc); }
+.calc { overflow-x: auto; }
+.total { font-size: 20px; margin: 14px 0 4px; } .total b { color: var(--acc); }
+.note { color: var(--mut); font-size: 13px; max-width: 760px; }
