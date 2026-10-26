@@ -6,7 +6,7 @@ h1 { margin: 0; font-size: 26px; } header p { margin: 4px 0 0; color: var(--mut)
 h2 { font-size: 15px; margin: 16px 0 8px; }
 main { max-width: 1200px; margin: auto; padding: 0 16px 40px; display: grid; gap: 18px; grid-template-columns: 1fr; }
 @media (min-width: 900px) { main { grid-template-columns: 1.6fr 1fr; } .calc { grid-column: 1 / -1; } }
-.view img { width: 100%; border-radius: 10px; display: block; background: #ddd; aspect-ratio: 3 / 2; object-fit: cover; }
+.view img { width: 100%; border-radius: 10px; display: block; background: #ddd; aspect-ratio: 3 / 4; object-fit: cover; max-height: 85vh; width: auto; max-width: 100%; margin: auto; }
 .view p { color: var(--mut); margin: 6px 2px; }
 .chips { display: flex; flex-wrap: wrap; gap: 6px; }
 button { font: inherit; cursor: pointer; border: 1px solid var(--line); background: var(--card); border-radius: 8px; padding: 7px 12px; color: var(--fg); }

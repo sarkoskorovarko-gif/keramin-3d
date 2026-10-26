@@ -121,22 +121,32 @@
    "pack_m2": 1.44,
    "pack_pcs": 4,
    "url": "https://keramin.ru/catalog/02_keramogranit_glazurovannyy/kraft_r/kraft_r_bla_600_600_keramicheskiy_granit_glaz_gr_/"
+  },
+  {
+   "id": "wall_white_dark",
+   "name": "Плейн Р7, белая, тёмная затирка",
+   "len": 300,
+   "wid": 600,
+   "price_m2": 1999.0,
+   "pack_m2": 1.44,
+   "pack_pcs": 4,
+   "url": "https://keramin.ru/catalog/02_keramogranit_glazurovannyy/pleyn_r/pleyn_r7_bla_600_600_keramicheskiy_granit_glaz_gr/"
   }
  ],
  "sets": [
   {
-   "id": "R",
-   "name": "Белые стены, мрамор «Крафт» в душе",
+   "id": "C",
+   "name": "Белая плитка, тёмная затирка",
    "walls": {
-    "back": "wall_kraft",
-    "front": "wall_flokk_r_7",
-    "left": "wall_flokk_r_7",
-    "right": "wall_flokk_r_7"
+    "back": "wall_white_dark",
+    "front": "wall_white_dark",
+    "left": "wall_white_dark",
+    "right": "wall_white_dark"
    }
   }
  ],
  "shots": {
-  "R": {
+  "C": {
    "s": [
     "dezert_p_1_600x600",
     "kanon_r_3_600x600",
@@ -156,8 +166,8 @@
   }
  },
  "room": {
-  "w": 2.6,
-  "d": 2.5,
+  "w": 2.2,
+  "d": 2.6,
   "h": 2.6
  }
 }
