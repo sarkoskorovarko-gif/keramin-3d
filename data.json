@@ -111,6 +111,16 @@
    "pack_m2": 1.98,
    "pack_pcs": 11,
    "url": "https://keramin.ru/catalog/01_plitka_oblitsovochnaya/studio/studio_4_biii_600_300_8_5_s1/"
+  },
+  {
+   "id": "wall_kraft",
+   "name": "Крафт Р, серый мрамор (стены)",
+   "len": 600,
+   "wid": 600,
+   "price_m2": 1749.0,
+   "pack_m2": 1.44,
+   "pack_pcs": 4,
+   "url": "https://keramin.ru/catalog/02_keramogranit_glazurovannyy/kraft_r/kraft_r_bla_600_600_keramicheskiy_granit_glaz_gr_/"
   }
  ],
  "sets": [
