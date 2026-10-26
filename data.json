@@ -125,49 +125,32 @@
  ],
  "sets": [
   {
-   "id": "A",
-   "name": "Белые стены + стена под дерево",
+   "id": "R",
+   "name": "Белые стены, мрамор «Крафт» в душе",
    "walls": {
-    "back": "wall_studio_4",
+    "back": "wall_kraft",
     "front": "wall_flokk_r_7",
     "left": "wall_flokk_r_7",
     "right": "wall_flokk_r_7"
    }
-  },
-  {
-   "id": "B",
-   "name": "Бежевый мрамор",
-   "walls": {
-    "back": "wall_kanon_r_3",
-    "front": "wall_kanon_r_3",
-    "left": "wall_kanon_r_3",
-    "right": "wall_kanon_r_3"
-   }
-  },
-  {
-   "id": "C",
-   "name": "Терраццо + белая стена",
-   "walls": {
-    "back": "wall_flokk_r_7",
-    "front": "wall_salerno_7",
-    "left": "wall_salerno_7",
-    "right": "wall_salerno_7"
-   }
   }
  ],
  "shots": {
-  "A": {
+  "R": {
    "s": [
-    "mistik_r1_1200x600"
-   ]
-  },
-  "B": {
-   "s": [
-    "kanon_r_3_600x600"
-   ]
-  },
-  "C": {
-   "s": [
+    "dezert_p_1_600x600",
+    "kanon_r_3_600x600",
+    "klemo_r_1_600x600",
+    "kraft_r_600x600",
+    "mistik_r1_1200x600",
+    "rey_r5_600x600"
+   ],
+   "d": [
+    "dezert_p_1_600x600",
+    "kanon_r_3_600x600",
+    "klemo_r_1_600x600",
+    "kraft_r_600x600",
+    "mistik_r1_1200x600",
     "rey_r5_600x600"
    ]
   }
