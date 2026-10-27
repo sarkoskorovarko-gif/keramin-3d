@@ -63,26 +63,6 @@
  ],
  "walls": [
   {
-   "id": "wall_pleyn_r7",
-   "name": "Плейн Р7, белая (стены)",
-   "len": 300,
-   "wid": 600,
-   "price_m2": 1999.0,
-   "pack_m2": 1.44,
-   "pack_pcs": 4,
-   "url": "https://keramin.ru/catalog/02_keramogranit_glazurovannyy/pleyn_r/pleyn_r7_bla_600_600_keramicheskiy_granit_glaz_gr/"
-  },
-  {
-   "id": "wall_flokk_r_7",
-   "name": "Флокк Р7, белая",
-   "len": 300,
-   "wid": 900,
-   "price_m2": 1799.0,
-   "pack_m2": 1.35,
-   "pack_pcs": 5,
-   "url": "https://keramin.ru/catalog/01_plitka_oblitsovochnaya/flokk_1/flokk_r_7_biii_900_300_s1_48_6/"
-  },
-  {
    "id": "wall_kanon_r_3",
    "name": "Канон Р3, бежевый мрамор",
    "len": 900,
@@ -103,16 +83,6 @@
    "url": "https://keramin.ru/catalog/01_plitka_oblitsovochnaya/salerno/salerno_7_blll_600_300_c1/"
   },
   {
-   "id": "wall_studio_4",
-   "name": "Студио 4, под дерево",
-   "len": 600,
-   "wid": 300,
-   "price_m2": 1199.0,
-   "pack_m2": 1.98,
-   "pack_pcs": 11,
-   "url": "https://keramin.ru/catalog/01_plitka_oblitsovochnaya/studio/studio_4_biii_600_300_8_5_s1/"
-  },
-  {
    "id": "wall_kraft",
    "name": "Крафт Р, серый мрамор (стены)",
    "len": 600,
@@ -125,7 +95,7 @@
   {
    "id": "wall_white_dark",
    "name": "Плейн Р7, белая, тёмная затирка",
-   "len": 300,
+   "len": 600,
    "wid": 600,
    "price_m2": 1999.0,
    "pack_m2": 1.44,

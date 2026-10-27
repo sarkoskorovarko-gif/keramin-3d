@@ -8,7 +8,7 @@ const rub = n => n.toLocaleString('ru-RU') + ' ₽';
 const has = (s, p, f) => (data.shots[s]?.[p] || []).includes(f);
 
 for (const k of ['w', 'd', 'h']) { $(k).value = data.room[k]; $(k).oninput = recalc; }
-$('door').onchange = $('win').onchange = recalc;
+for (const k of ['door_on', 'door_w', 'door_h']) $(k).oninput = $(k).onchange = recalc;
 
 data.sets.forEach(s => {
   const b = document.createElement('button'); b.textContent = s.name; b.dataset.id = s.id;
@@ -37,7 +37,8 @@ function show() {
 
 function recalc() {
   const set = data.sets.find(s => s.id === st.set);
-  const room = { w: +$('w').value, d: +$('d').value, h: +$('h').value, door: $('door').checked, window: $('win').checked };
+  const room = { w: +$('w').value, d: +$('d').value, h: +$('h').value,
+    door: $('door_on').checked && { w: +$('door_w').value, h: +$('door_h').value } };
   if (!(room.w > 0.5 && room.d > 0.5 && room.h > 1.5)) return;
   const walls = Object.fromEntries(Object.entries(set.walls).map(([k, id]) => [k, T[id]]));
   const r = calc(room, T[st.floor], walls, st.pat === 'd');

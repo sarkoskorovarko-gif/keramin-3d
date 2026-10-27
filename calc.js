@@ -38,20 +38,25 @@ function count(fr) {
   return { full, cut: parts.length, need: full + tiles };
 }
 
-// room {w,d,h,door,window}; floor — плитка пола; walls {back, front, left, right}; diag — ромб
+// room {w,d,h,door:{w,h}|false}; floor — плитка пола; walls {back, front, left, right}; diag — ромб
 export function calc(room, floor, walls, diag) {
   const { w: W, d: D, h: H } = room, surf = [['Пол', floor, W, D, [], diag, false]];
   const holes = { back: [], front: [], left: [], right: [] };
-  if (room.door) holes.front.push([W - 1.8, W - 1.0, 0, 2.1]);
-  if (room.window) holes.left.push([D - 0.85, D - 0.25, 1.4, Math.min(2.2, H - 0.3)]);
-  const names = { back: 'Стена с тумбой', front: 'Стена с дверью', left: 'Левая стена', right: 'Правая стена' };
+  // место двери не важно для штук на весь набор: вычитаем из одной длинной стены
+  const len = { back: W, front: W, left: D, right: D };
+  for (const [o, wall, z] of [[room.door, 'left', 0]]) {
+    if (!o || !(o.w > 0 && o.h > 0)) continue;
+    const L = len[wall], x0 = Math.max(0, (L - o.w) / 2), x1 = Math.min(L, (L + o.w) / 2), y1 = Math.min(H, z + o.h);
+    if (x1 > x0 && y1 > z) holes[wall].push([x0, x1, z, y1]);
+  }
+  const names = { back: 'Стена 1', front: 'Стена 2', left: 'Стена 3', right: 'Стена 4' };
   for (const k of ['back', 'front', 'left', 'right'])
     surf.push([names[k], walls[k], k === 'back' || k === 'front' ? W : D, H, holes[k], false, true]);
   const rows = [], by = new Map();
   for (const [name, t, w, h, hl, dg, wall] of surf) {
     const c = count(pieces(w, h, t.len / 1000, t.wid / 1000, hl, dg, wall));
     const area = w * h - hl.reduce((s, [x0, x1, y0, y1]) => s + (x1 - x0) * (y1 - y0), 0);
-    rows.push({ name, tile: t.name, area, ...c });
+    rows.push({ name: wall ? `${name}, ${w.toFixed(2).replace('.', ',')} м` : name, tile: t.name, area, ...c });
     const b = by.get(t.id) || { t, need: 0, diag: false }; b.need += c.need; b.diag ||= dg; by.set(t.id, b);
   }
   let total = 0; const buy = [];

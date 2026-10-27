@@ -27,8 +27,12 @@
       <label>Ширина <input id="w" type="number" step="0.05" min="1.2" max="6"></label>
       <label>Глубина <input id="d" type="number" step="0.05" min="1.2" max="6"></label>
       <label>Высота <input id="h" type="number" step="0.05" min="2.2" max="3.5"></label>
-      <label class="ck"><input id="door" type="checkbox" checked> Дверь 80×210</label>
-      <label class="ck"><input id="win" type="checkbox" checked> Окно 60×80</label>
+    </div>
+    <h2>Дверь (плитку на ней не считаем)</h2>
+    <div class="size">
+      <label class="ck"><input id="door_on" type="checkbox" checked> Дверь</label>
+      <label>ширина, м <input id="door_w" type="number" step="0.05" min="0.5" max="1.5" value="0.8"></label>
+      <label>высота, м <input id="door_h" type="number" step="0.05" min="1.8" max="2.6" value="2.1"></label>
     </div>
     <table id="rows"></table>
     <h2>Купить</h2>
